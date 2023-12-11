@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none !important;
+  text-decoration: none !important;
+  box-sizing: border-box !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.h_mobile {
+  height: calc(100vh - 60px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* ========== HEADER CSS ============= */
+.aboutus_bg {
+  background-image: url("./assets/images/png/aboutus_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero_first_bg {
+  background-image: url("./assets/images/png/hero_first_bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.form_bg {
+  background-image: url("./assets/images/png/form_bg_img.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+
+/* ===========HORIZONTAL ROADMAP CSS======== */
+.roadmap_cards:hover .roadmap_heading {
+  background-color: #3c278dc2;
+  padding: 10px;
+  color: white !important;
+}
+.roadmap_cards:hover .roadmap_para {
+  background-color: rgba(30, 30, 30, 0.07);
+  padding: 10px;
+}
+/* ===========HORIZONTAL ROADMAP CSS END HERE======== */
+
+
+/* =======TIMELINE ==== */
+.timeline {
+  width: 100%;
+}
+
+.timeline-item {
+  border-left: 2px solid #4299e1;
+  padding: 20px;
+  margin: 20px 0;
+  position: relative;
+  transition: background-color 0.3s, transform 0.3s;
+
+  &:hover {
+    background-color: #4299e1;
+    transform: scale(1.02);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.timeline-content {
+  margin-left: 2rem;
+}
+/* ============== */
+html{
+  scroll-behavior: smooth;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width:767.98px) {
+  .overflow_hidden{
+    overflow: hidden;
   }
 }
